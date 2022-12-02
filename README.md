@@ -1,4 +1,4 @@
-# quickswap-v2-best-path
+# quickswap-best-path
 
 A module for calculating trading paths via [Quickswap](https://quickswap.exchange)-based swap contracts with no setup. Works with the [Quickswap API & SDK](https://docs.uniswap.org/sdk/v2/overview).
 

@@ -5,7 +5,7 @@ import { findBestPathExactTokenAToTokenB, findBestPathTokenAToExactTokenB, BestP
 
 dotenv.config()
 
-jest.setTimeout(60000)
+jest.setTimeout(75000)
 
 describe('Best Path', () => {
   let tokenA: Token, tokenB: Token

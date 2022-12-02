@@ -42,7 +42,7 @@ export const BASES: {
       symbol: 'MATIC',
       name: 'Matic Token',
       decimals: 18
-    },
+    }
   ],
   [Uniswap.ChainId.MUMBAI]: [
     {
@@ -56,6 +56,6 @@ export const BASES: {
       symbol: 'MATIC',
       name: 'Matic Token',
       decimals: 18
-    },
+    }
   ]
 }
