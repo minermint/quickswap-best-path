@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2015",
+    "declaration": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist/types",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
