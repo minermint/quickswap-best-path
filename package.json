@@ -1,6 +1,6 @@
 {
   "name": "@minertoken/quickswap-best-path",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The Quickswap Best Path module finds the best exchange rate between two tokens and returns the corresponding route of tokens necessary to complete the swap.",
   "type": "module",
   "exports": {
