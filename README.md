@@ -2,7 +2,7 @@
 
 A module for calculating trading paths via [Quickswap](https://quickswap.exchange)-based swap contracts with no setup. Works with the [Quickswap API & SDK](https://docs.uniswap.org/sdk/v2/overview).
 
-## Responsibility for any losses caused
+## Managing price discrepancies and minimizing loss
 
 Various factors are at play when calculating a swap between two tokens. Additional issues such as price movement, liquidity and gas fees can affect the eventual swap rate between two tokens.
 
@@ -13,7 +13,7 @@ You (and/or your users) take full responsibility for the execution of the swap b
 ## Installation
 
 ```
-npm i @miner/quickswap-v2-best-path
+npm i @minertoken/quickswap-v2-best-path
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ To calculate the best price path, pass two tokens, the token in and the token ou
 Start by importing the module:
 
 ```
-import * as BestPath from '@miner/quickswap-best-path'
+import * as BestPath from '@minertoken/quickswap-best-path'
 ```
 
 There are various ways to specify the tokenA and tokenB details. The native Best Path functions accept instances of the Quickswap.Token class, so you will need the `quickswap-sdk` module installed:
@@ -178,7 +178,7 @@ To use a wrapper, include it instead of the native functions.
 To use web3:
 
 ```js
-import * as Web3BestPath from '@miner/quickswap-best-path/wrappers/web3'
+import * as Web3BestPath from '@minertoken/quickswap-best-path/wrappers/web3'
 ...
 const path = Web3BestPath.computeExactTokenAToTokenB(tokenA, tokenB, '1000000000000000000', provider)
 ```
@@ -186,7 +186,7 @@ const path = Web3BestPath.computeExactTokenAToTokenB(tokenA, tokenB, '1000000000
 To use ethers: 
 
 ```js
-import * as EthersBestPath from '@miner/quickswap-best-path/wrappers/ethers'
+import * as EthersBestPath from '@minertoken/quickswap-best-path/wrappers/ethers'
 ...
 const path = EthersBestPath.computeExactTokenAToTokenB(tokenA, tokenB, '1000000000000000000', provider)
 ```
